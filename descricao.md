@@ -18,3 +18,7 @@ Led Amarelo aceso
 ## Led vermelho:
 Led Vermelho aceso
 <img src="assets/Vermelho.png">
+
+
+# Projeto
+[Link do projeto](https://wokwi.com/projects/417161673392421889)
