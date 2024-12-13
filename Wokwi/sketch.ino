@@ -35,13 +35,13 @@ void setup() {
 
   Serial.begin(9600); // Configuração para debug por interface serial entre ESP e computador com baud rate de 9600
 
-  //WiFi.begin("Wokwi-GUEST", ""); // Conexão à rede WiFi aberta com SSID Wokwi-GUEST
+  WiFi.begin("Wokwi-GUEST", ""); // Conexão à rede WiFi aberta com SSID Wokwi-GUEST
 
-  //while (WiFi.status() != WL_CONNECT_FAILED) {
-    //delay(100);
-    //Serial.print(".");
-  //}
-  //Serial.println("Conectado ao WiFi com sucesso!"); // Considerando que saiu do loop acima, o ESP32 agora está conectado ao WiFi (outra opção é colocar este comando dentro do if abaixo)
+  while (WiFi.status() != WL_CONNECT_FAILED) {
+    delay(100);
+    Serial.print(".");
+  }
+  Serial.println("Conectado ao WiFi com sucesso!"); // Considerando que saiu do loop acima, o ESP32 agora está conectado ao WiFi (outra opção é colocar este comando dentro do if abaixo)
 
   // Verifica estado do botão
   statusBotao = digitalRead(pinoBotao);
